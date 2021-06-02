@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Todo List</title>
+    <meta name="description" content="My beautiful Todo List">
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>My Todo List</h1>
+        <br>
+        <nav class="menu">
+            <a href="#all todos">All todos</a>
+            <!-- better add non breaking space &nbsp -->
+            <a href="#archive todos">Archive</a>
+        </nav>
+    </header>
+    <hr />
+    <main>
+        <!-- better choose <section> -->
+        <article class="all todos" id="all todos">
+            <h2>All Todos</h2>
+                <ul>
+                    <li>
+                        <details>
+                            <summary><input type="checkbox" name="done" id="done"><span class="point">&#127838 Buy
+                                    bread</span></summary>
+                            <span class="time">&#x23F0 tomorrow at 10:00</span>
+                        
+                        <!-- better use <time datatime="2021-05-25 10:00">tomorrow-->
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary><input type="checkbox" name="done" id="done"><span class="point">&#129371 Buy
+                                    milk</span></summary>
+                            <span class="time">&#x23F0 tomorrow at 10:00</span>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary><input type="checkbox" name="done" id="done"><span class="point">&#128131 Go
+                                    dance</span></summary>
+                            <span class="time">&#x23F0 Valentines day</span>
+                        </details>
+                    </li>
+                </ul>
+            
+        </article>
+        <article class="archive todos" id="archive todos">
+            <h2>Archive</h2>
+            <div class="finished todos" aria-labelledby="arcive" aria-describedby="archive">
+                <ul> <!-- s для зачеркивания checked="checked"-->
+                    <li><s><input type="checkbox" name="done" id="done">Find the best frontend course</s></li>
+                    <li><s><input type="checkbox" name="done" id="done">Complete Git & Github course</s></li>
+                    <li><s><input type="checkbox" name="done" id="done">Start cooking courses</s></li>
+                    <li><s><input type="checkbox" name="done" id="done">Find English course</s></li>
+                </ul>
+            </div>
+        </article>
+    </main>
+</body>
+<hr />
+<footer>
+
+    <p>© 2021</p>
+</footer>
+<!-- ссылка на сущность Entity &copy-->
+</html>
